@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>祥贤传统药材汗蒸 XIANGXIAN TRADITIONAL SWEAT STEAMING HEALTH ENTERPRISE</title>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- leaflet openstreetmap -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+crossorigin=""/>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #e8f5e9; /* Very light green background for a soothing effect */
+    color: #333; /* Dark text for contrast */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .navbar, footer {
+    background-color: #ccf2cf; /* Light green background for navbar and footer */
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animated-element {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light"> <!-- bg-light -->
+    <a class="navbar-brand mx-auto" href="#"><i class="fa-solid fa-spa fa-fw"></i> 祥贤传统药材汗蒸</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#mapid">Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#directions">Directions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#opening-hours">Opening Hours</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#convince-section">Why Us?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#menu-pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#foot-soak">Foot Soak Therapy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sauna-therapy">Sauna Therapy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact-form">Write to Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Map -->
+  <section id="mapid" class="container mt-4 animated-element" style="height:360px;"></section>
+
+  <!-- Directions -->
+  <section id="directions" class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mt-2">
+        <a href="https://maps.app.goo.gl/3z6o9RNJZXhJ76HH6" class="btn btn-success btn-block" target="_blank">
+          Get Directions (Google Maps)
+        </a>
+      </div>
+      <div class="col-md-6 mt-2">
+        <a href="https://waze.com/ul/hw22sy6xw3" class="btn btn-primary btn-block" target="_blank">
+          Get Directions (Waze)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opening Hours -->
+  <section id="opening-hours" class="container mt-4 text-center">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">Opening Hours 营业时间</h2>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th scope="row"><i class="far fa-clock fa-fw"></i> Monday - Friday<br>[ 周一至周五 ]</th>
+              <td>下午1点至晚上10点<br>( 1.00. pm ~ 10.00pm )</td>
+            </tr>
+            <tr>
+              <th scope="row"><i class="far fa-clock fa-fw"></i> Saturday & Sunday<br>[ 周六和周日 ]</th>
+              <td>上午11点至晚上10点<br>( 11.00am ~ 10.00pm )</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mt-4 py-3 text-center">
+    <h2>Address & Contact</h2>
+    <address>
+      Jalan PM 1, Taman Perindustrian Merdeka, Batu Berendam, 75350 Melaka
+    </address>
+    <p>Phone 电话: <a href="tel:+60162060502">016-206 0502</a></p>
+    <p>Email 电邮网址: <a href="mailto:xiangxiansauna@gmail.com">xiangxiansauna@gmail.com</a></p>
+    <div class="text-center text-lg-start py-4">
+      <a href="https://facebook.com" class="me-4 text-reset fa-3x">
+        <i class="fa-brands fa-square-facebook" style="color: #74C0FC;"></i>
+      </a>
+      <a href="https://whatsapp.com" class="me-4 text-reset fa-3x">
+        <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i>
+      </a>
+      <!-- Add more social media icons as needed -->
+    </div>
+  </section>
+
+  <!-- Foot Soak Therapy Section -->
+  <section id="foot-soak" class="container mt-4 text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Foot Soak Therapy</h2>
+        <p>Relax with our herbal foot soak.</p>
+      </div>
+      <div class="col-md-6">
+        <!-- Image or Carousel for Foot Soak Therapy -->
+        <img src="https://placehold.co/400x300" alt="foot soak therapy" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sauna Therapy Section -->
+  <section id="sauna-therapy" class="container mt-4 text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Sauna Therapy</h2>
+        <p>Detoxify in our sauna.</p>
+      </div>
+      <div class="col-md-6">
+        <!-- Image or Carousel for Sauna Therapy -->
+        <img src="https://placehold.co/400x300" alt="sauna therapy" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Pricing Section -->
+  <section id="menu-pricing" class="container mt-4 text-center">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">Services Pricing 服务</h2>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th scope="row">
+                <h3><i class="fa-solid fa-socks fa-fw fa-xs"></i> Foot Soak Therapy</h3>
+                <h6>Relax with our herbal foot soak.</h6>
+              </th>
+              <td><h5><i class="fa-solid fa-dollar-sign fa-fw fa-xs"></i>Price: RM15/session</h5></td>
+            </tr>
+            <th scope="row">
+              <h3><i class="fa-solid fa-hot-tub-person fa-fw fa-xs"></i> Sauna Therapy</h3>
+              <h6>Detoxify in our sauna.</h6>
+            </th>
+            <td><h5><i class="fa-solid fa-dollar-sign fa-fw fa-xs"></i>Price: RM25/session</h5></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- convince section -->
+  <section id="convince-section" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">放工后找不到地方娱乐？😫</h2>
+      <p class="text-center mb-4">在外面跟朋友喝酒都需要至少RM50？<strong>只需区区RM25 !!</strong></p>
+      <p class="text-center mb-4">来我们这里可以娱乐同时还可以养生。。。</p>
+      <h3 class="text-center mb-4">为什么必须尝试我们的药材桑拿呢？</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">✅ 排毒 （体内废物及肝肾毒素 ）</li>
+        <li class="list-group-item">✅ 改善肌肤光泽，减少斑点</li>
+        <li class="list-group-item">✅ 减轻关节压力，缓解肌肉酸痛</li>
+        <li class="list-group-item">✅ 改善体质，增强免疫力</li>
+        <li class="list-group-item">✅ 缓解压力，提升睡眠质量</li>
+        <li class="list-group-item">✅ 帮助瘦身塑形，对水肿有特效</li>
+        <li class="list-group-item">✅ 消除身体疲劳</li>
+        <li class="list-group-item">✅ 疏通经络，促进气血循环</li>
+      </ul>
+      <div class="text-center mt-4">
+        <a href="#mapid" class="btn btn-primary">立即预约体验</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="container mt-4">
+    <h2>Photo Gallery</h2>
+    <!-- Bootstrap Carousel or Grid of Images -->
+    <div id="photoGalleryCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#photoGalleryCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#photoGalleryCarousel" data-slide-to="1"></li>
+          <li data-target="#photoGalleryCarousel" data-slide-to="2"></li>
+          <!-- Add more indicators if you have more images -->
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://placehold.co/100x60" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://placehold.co/100x60" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://placehold.co/100x60" alt="Third slide">
+          </div>
+          <!-- Add more carousel items if you have more images -->
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#photoGalleryCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#photoGalleryCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="container mt-4 py-3">
+    <h2>Write to Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- About Us -->
+  <section id="about-us" class="bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="text-center mb-4">About Us</h1>
+      <div class="row">
+        <div class="col-lg-6 mb-3">
+          <img src="https://placehold.co/250x250" alt="Our Team" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-lg-6 py-4">
+          <h3>Our Mission</h3>
+          <p>We strive to provide the best service and improve the well-being of our customers through our traditional treatments.</p>
+          <h3>Our Story</h3>
+          <p>Founded in 2020, our wellness center has been dedicated to bringing the ancient wisdom of Traditional Chinese Medicine to the modern world.</p>
+          <h3>Meet the Team</h3>
+          <p>Our team of experienced practitioners is passionate about holistic health and is here to guide you on your wellness journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start"> <!-- bg-light -->
+  <!-- Social media icons -->
+  <div class="pt-5">
+      <a href="https://facebook.com" class="me-4 text-reset fa-3x">
+        <i class="fa-brands fa-square-facebook" style="color: #74C0FC;"></i>
+      </a>
+      <a href="https://whatsapp.com" class="me-4 text-reset fa-3x">
+        <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i>
+      </a>
+    <!-- Add more social media icons as needed -->
+  </div>
+  <!-- Rest of the footer content -->
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0 py-4">
+        <h4 class="text-uppercase">祥贤传统药材汗蒸</h4>
+        <h4 class="text-uppercase">XIANGXIAN TRADITIONAL SWEAT STEAMING HEALTH ENTERPRISE</h4>
+        <p>Relax with our herbal foot soak and detoxify in our sauna.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Sitemap</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#mapid" class="text-dark">Map</a>
+          </li>
+          <li>
+            <a href="#directions" class="text-dark">Directions</a>
+          </li>
+          <li>
+            <a href="#opening-hours" class="text-dark">Opening Hours</a>
+          </li>
+          <li>
+            <a href="#contact" class="text-dark">Contact</a>
+          </li>
+          <li>
+            <a href="#convince-section" class="text-dark">Why Us?</a>
+          </li>
+          <li>
+            <a href="#menu-pricing" class="text-dark">Pricing</a>
+          </li>
+          <li>
+            <a href="#foot-soak" class="text-dark">Foot Soak Therapy</a>
+          </li>
+          <li>
+            <a href="#sauna-therapy" class="text-dark">Sauna Therapy</a>
+          </li>
+          <li>
+            <a href="#gallery" class="text-dark">Photo Gallery</a>
+          </li>
+          <li>
+            <a href="#contact-form" class="text-dark">Write to Us</a>
+          </li>
+          <li>
+            <a href="#about-us" class="text-dark">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact Us</h5>
+        <p>
+          Jalan PM 1, Taman Perindustrian Merdeka,<br>
+          Batu Berendam, 75350 Melaka<br>
+          <br>
+          Phone 电话: <a href="tel:+60162060502">016-206 0502</a><br>
+          Email 电邮网址：<a href="mailto:xiangxiansauna@gmail.com">xiangxiansauna@gmail.com</a><br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2024 祥贤传统药材汗蒸<br>XIANGXIAN TRADITIONAL SWEAT STEAMING HEALTH ENTERPRISE
+  </div>
+  </footer>
+
+  <!-- scroll to top button -->
+  <button type="button" class="btn btn-secondary" id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>  
+
+  <!-- leaflet openstreetmap js -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  <script>
+    // leaflet openstreetmap
+    var mapid = L.map('mapid').setView([2.256068, 102.238092], 13);
+  
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(mapid);
+  
+    var marker = L.marker([2.256068, 102.238092]).addTo(mapid);
+    marker.bindPopup("<b>祥贤传统药材汗蒸<br>XIANGXIAN TRADITIONAL SWEAT STEAMING HEALTH ENTERPRISE</b><br>Jalan PM 1, Taman Perindustrian Merdeka, Batu Berendam, 75350 Melaka, Malaysia.").openPopup();
+  
+    // scroll to top
+    // Get the button
+    let mybutton = document.getElementById("scrollToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener('click', function(){
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
