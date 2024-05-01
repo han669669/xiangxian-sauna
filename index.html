@@ -24,43 +24,50 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid justify-content-center">
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-spa fa-fw"></i> 祥贤传统药材汗蒸</a>
+            <a class="navbar-brand d-flex align-items-center" href="#"
+                style="font-family: 'Noto Sans SC', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <img src="./_98e5b420-4519-438b-a0c7-aff261aeb428.jpg" alt="logo" width="60" height="60"
+                    class="d-inline-block align-top">
+                <span class="ms-2 fw-bold text-dark">祥贤传统药材汗蒸</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars01"
                 aria-controls="navbars01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- <i class="fa-solid fa-spa fa-fw"></i> -->
+
             <div class="collapse navbar-collapse flex-grow-0" id="navbars01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown"
-                            aria-expanded="false">Services & Pricing</a>
+                            aria-expanded="false">Services & Pricing<br>/ 服务与价格</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown">
-                            <li><a class="dropdown-item" href="#menu-pricing">Pricing</a></li>
-                            <li><a class="dropdown-item" href="#foot-soak">Foot Soak Therapy</a></li>
-                            <li><a class="dropdown-item" href="#sauna-therapy">Sauna Therapy</a></li>
+                            <li><a class="dropdown-item" href="#menu-pricing">Pricing / 定价</a></li>
+                            <li><a class="dropdown-item" href="#foot-soak">Foot Soak Therapy / 足浴疗法</a></li>
+                            <li><a class="dropdown-item" href="#sauna-therapy">Sauna Therapy / 桑拿疗法</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#mapid">Map</a>
+                        <a class="nav-link" href="#mapid">Map / 地图</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#directions">Directions</a>
+                        <a class="nav-link" href="#directions">Directions / 方向</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#opening-hours">Opening Hours</a>
+                        <a class="nav-link" href="#opening-hours">Opening Hours / 营业时间</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Contact / 联系方式</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#convince-section">Why Us?</a>
+                        <a class="nav-link" href="#convince-section">Why Us? / 为什么选择我们?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#myCarousel">Photo Gallery</a>
+                        <a class="nav-link" href="#myCarousel">Photo Gallery / 照片画廊</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About Us</a>
+                        <a class="nav-link" href="#about-us">About Us / 关于我们</a>
                     </li>
                 </ul>
             </div>
@@ -73,116 +80,155 @@
     <!-- Directions -->
     <section id="directions" class="container mt-4 text-center">
         <hr class="featurette-divider">
-        <div class="row">
-            <div class="col-md-6 mt-2">
-                <a href="https://maps.app.goo.gl/3z6o9RNJZXhJ76HH6" class="btn btn-success btn-block" target="_blank">
-                    Get Directions (Google Maps)
+        <div class="row justify-content-center">
+            <div class="col-md-8 mt-2">
+                <p class="lead mb-4">Ready to visit us? Choose your preferred navigation app to get step-by-step
+                    directions:</p>
+                <p class="lead mb-4">准备好访问我们了吗？选择您喜欢的导航应用程序获取逐步指导：</p>
+                <a href="https://maps.app.goo.gl/3z6o9RNJZXhJ76HH6" class="btn btn-lg btn-success mb-2 w-100"
+                    target="_blank">
+                    <i class="fas fa-directions mr-2"></i> Navigate with Google Maps / 使用谷歌地图导航
                 </a>
-            </div>
-            <div class="col-md-6 mt-2">
-                <a href="https://waze.com/ul/hw22sy6xw3" class="btn btn-primary btn-block" target="_blank">
-                    Get Directions (Waze)
+                <a href="https://waze.com/ul/hw22sy6xw3" class="btn btn-lg btn-primary w-100" target="_blank">
+                    <i class="fas fa-route mr-2"></i> Navigate with Waze / 使用 Waze 导航
                 </a>
             </div>
         </div>
     </section>
+
+    <!-- Facebook Page Widget-->
+    <div class="container text-center my-4 py-4" style="background-color: #f8fff8;">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="yourNonceValue"></script>
+        <div class="fb-page mx-auto" data-href="https://www.facebook.com/heeretea.my" data-tabs="timeline" data-width=""
+            data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/heeretea.my" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/heeretea.my">Your Page Name</a>
+            </blockquote>
+        </div>
+    </div>
 
     <!-- Opening Hours -->
     <section id="opening-hours" class="container mt-4 text-center">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-center pb-1">Opening Hours 营业时间</h2>
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <th scope="row"><i class="far fa-clock fa-fw"></i> Monday - Friday<br>[ 周一至周五 ]</th>
-                            <td>下午1点至晚上10点<br>( 1.00. pm ~ 10.00pm )</td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><i class="far fa-clock fa-fw"></i> Saturday & Sunday<br>[ 周六和周日 ]</th>
-                            <td>上午11点至晚上10点<br>( 11.00am ~ 10.00pm )</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <h2>Opening Hours 营业时间</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Days 天</th>
+                        <th>Hours 时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday<br>[ 周一至周五 ]</td>
+                        <td>1.00 pm - 10.00 pm<br>[ 下午1点至晚上10点 ]</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday & Sunday<br>[ 周六和周日 ]</td>
+                        <td>11.00 am - 10.00 pm<br>[ 上午11点至晚上10点 ]</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
+    <!-- Store Status Display -->
+    <div id="store-status-container" class="container my-4 py-4 text-center">
+        <h3>The store is currently: <span id="store-status"></span></h3>
+        <h3>商店当前状态: <span id="store-status-cn"></span></h3>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="container mt-4 py-3 text-center">
-        <h2>Address & Contact</h2>
-        <address>
+        <h2 class="mb-3">Address & Contact</h2>
+        <address class="mb-3">
             Jalan PM 1, Taman Perindustrian Merdeka, Batu Berendam, 75350 Melaka
         </address>
-        <p>Phone 电话: <a href="tel:+60162060502">016-206 0502</a></p>
-        <p>Email 电邮网址: <a href="mailto:xiangxiansauna@gmail.com">xiangxiansauna@gmail.com</a></p>
+        <div class="mb-3">
+            <p class="mb-1">Phone 电话:</p>
+            <a class="btn btn-outline-primary" href="tel:+60162060502">016-206 0502</a>
+        </div>
+        <div class="mb-4">
+            <p class="mb-1">Email 电邮网址:</p>
+            <a class="btn btn-outline-secondary" href="mailto:xiangxiansauna@gmail.com">xiangxiansauna@gmail.com</a>
+        </div>
         <!-- Social Media Icons -->
-        <div class="text-center">
-            <a href="https://facebook.com" class="text-reset fa-3x icon">
-                <i class="fa-brands fa-square-facebook" style="color: #74C0FC;"></i>
+        <div class="social-media-icons">
+            <a href="https://facebook.com" class="icon mx-2">
+                <i class="fa-brands fa-facebook fa-2x" style="color: #4267B2;"></i>
             </a>
-            <a href="https://whatsapp.com" class="text-reset fa-3x icon">
-                <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i>
+            <a href="https://whatsapp.com" class="icon mx-2">
+                <i class="fa-brands fa-whatsapp fa-2x" style="color: #25D366;"></i>
             </a>
             <!-- Add more social media icons as needed -->
         </div>
     </section>
 
     <!-- Services -->
-    <section class="container">
+    <section class="container text-center" id="services">
         <hr class="featurette-divider">
         <div class="row featurette" id="foot-soak">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Foot Soak Therapy. <span class="text-muted">It’ll blow your
-                        mind.</span></h2>
-                <p class="lead">Relax with our herbal foot soak.</p>
+                <h2 class="featurette-heading">
+                    Foot Soak Therapy <span class="text-muted">足浴疗法.</span>
+                    <br>
+                    <small class="text-muted">It’ll blow your mind 它会让你大吃一惊.</small>
+                </h2>
+                <p class="lead">Relax with our herbal foot soak <span class="text-normal">在我们的草药足浴中放松.</span></p>
             </div>
             <div class="col-md-5">
-                <!-- Image or Carousel for Foot Soak Therapy -->
-                <img src="https://placehold.co/400x300" alt="foot soak therapy" class="img-fluid">
+                <img src="https://placehold.co/400x300" alt="Herbal Foot Soak Therapy" class="img-fluid">
             </div>
         </div>
         <hr class="featurette-divider">
         <div class="row featurette" id="sauna-therapy">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Sauna Therapy. <span class="text-muted">See for
-                        yourself.</span></h2>
-                <p class="lead">Detoxify in our sauna.</p>
+                <h2 class="featurette-heading">
+                    Sauna Therapy <span class="text-muted">桑拿疗法.</span>
+                    <br>
+                    <small class="text-muted">See for yourself 亲自体验.</small>
+                </h2>
+                <p class="lead">Detoxify in our sauna <span class="text-normal">在我们的桑拿中排毒.</span></p>
             </div>
             <div class="col-md-5 order-md-1">
-                <!-- Image or Carousel for Foot Soak Therapy -->
-                <img src="https://placehold.co/400x300" alt="foot soak therapy" class="img-fluid">
+                <img src="https://placehold.co/400x300" alt="Sauna Therapy" class="img-fluid">
             </div>
         </div>
         <hr class="featurette-divider">
     </section>
 
     <!-- Menu Pricing Section -->
-    <section id="menu-pricing" class="container mt-4 text-center">
+    <section id="menu-pricing" class="container mt-5 text-center">
+        <h2 class="text-center mb-4">Services Pricing 服务</h2>
         <div class="row">
-            <div class="col-12">
-                <h2 class="text-center pb-2">Services Pricing 服务</h2>
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <th scope="row">
-                                <h4><i class="fa-solid fa-socks fa-fw fa-xs"></i> Foot Soak Therapy</h4>
-                                <h6>Relax with our herbal foot soak.</h6>
-                            </th>
-                            <td>
-                                <h5><i class="fa-solid fa-dollar-sign fa-fw fa-xs"></i>Price: RM15/session</h5>
-                            </td>
-                        </tr>
-                        <th scope="row">
-                            <h4><i class="fa-solid fa-hot-tub-person fa-fw fa-xs"></i> Sauna Therapy</h4>
-                            <h6>Detoxify in our sauna.</h6>
-                        </th>
-                        <td>
-                            <h5><i class="fa-solid fa-dollar-sign fa-fw fa-xs"></i>Price: RM25/session</h5>
-                        </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fa-solid fa-socks fa-fw"></i> Foot Soak Therapy 足浴疗法</h3>
+                        <p class="card-text">Relax with our herbal foot soak. 在我们的草药足浴中放松.</p>
+                        <div class="text-center mt-3">
+                            <h4 class="text-success"><i class="fa-solid fa-dollar-sign fa-fw"></i>Price: RM15/session
+                            </h4>
+                            <a href="#foot-soak" class="btn btn-primary">Learn More 了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fa-solid fa-hot-tub-person fa-fw"></i> Sauna Therapy 桑拿疗法</h3>
+                        <p class="card-text">Detoxify in our sauna. 在我们的桑拿中排毒.</p>
+                        <div class="text-center mt-3">
+                            <h4 class="text-success"><i class="fa-solid fa-dollar-sign fa-fw"></i>Price: RM25/session
+                            </h4>
+                            <a href="#sauna-therapy" class="btn btn-primary">Learn More 了解更多</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -190,22 +236,62 @@
     <!-- Convince Section -->
     <section id="convince-section" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4">放工后找不到地方娱乐？😫</h2>
-            <p class="text-center mb-4">在外面跟朋友喝酒都需要至少RM50？<strong>只需区区RM25 !!</strong></p>
-            <p class="text-center mb-4">来我们这里可以娱乐同时还可以养生。。。</p>
-            <h3 class="text-center mb-4">为什么必须尝试我们的药材桑拿呢？</h3>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">✅ 排毒 （体内废物及肝肾毒素 ）</li>
-                <li class="list-group-item">✅ 改善肌肤光泽，减少斑点</li>
-                <li class="list-group-item">✅ 减轻关节压力，缓解肌肉酸痛</li>
-                <li class="list-group-item">✅ 改善体质，增强免疫力</li>
-                <li class="list-group-item">✅ 缓解压力，提升睡眠质量</li>
-                <li class="list-group-item">✅ 帮助瘦身塑形，对水肿有特效</li>
-                <li class="list-group-item">✅ 消除身体疲劳</li>
-                <li class="list-group-item">✅ 疏通经络，促进气血循环</li>
-            </ul>
+            <h2 class="text-center mb-4">结束繁忙的一天，该是放松的时刻了 🌟</h2>
+            <p class="text-center mb-4">为何在外高消费，当舒适享受仅需<strong>RM25</strong>?</p>
+            <p class="text-center mb-4">加入我们，体验娱乐与养生的完美结合。</p>
+            <h3 class="text-center mb-4">探索我们独特的药材桑拿，它能带给你的不仅仅是放松：</h3>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">排毒</h4>
+                            <p class="card-text">清除体内废物及肝肾毒素，让身体更加轻盈。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">美肤</h4>
+                            <p class="card-text">改善皮肤质感，减少色斑，让肌肤焕发光彩。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">缓解压力</h4>
+                            <p class="card-text">减少身体压力，缓解肌肉酸痛，改善睡眠。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">提升免疫</h4>
+                            <p class="card-text">增强体质，提高免疫力，使您更加健康。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">塑形瘦身</h4>
+                            <p class="card-text">帮助塑形瘦身，有效对付水肿，让您轻盈自信。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">疏通经络</h4>
+                            <p class="card-text">促进气血循环，消除疲劳，恢复活力。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="text-center mt-4">
-                <a href="#mapid" class="btn btn-primary">立即预约体验</a>
+                <a href="#mapid" class="btn btn-primary btn-lg">立即预约体验</a>
             </div>
         </div>
     </section>
@@ -267,36 +353,41 @@
     <!-- About Us -->
     <section id="about-us" class="bg-light py-5 text-center">
         <div class="container">
-            <h1 class="text-center mb-4">About Us</h1>
-            <div class="row">
-                <div class="col-lg-6 mb-3">
-                    <img src="https://placehold.co/250x250" alt="Our Team" class="img-fluid rounded-circle">
-                </div>
-                <div class="col-lg-6 py-4">
-                    <h3>Our Mission</h3>
-                    <p>We strive to provide the best service and improve the well-being of our customers through our
-                        traditional treatments.</p>
-                    <h3>Our Story</h3>
-                    <p>Founded in 2020, our wellness center has been dedicated to bringing the ancient wisdom of
-                        Traditional Chinese Medicine to the modern world.</p>
-                    <h3>Meet the Team</h3>
-                    <p>Our team of experienced practitioners is passionate about holistic health and is here to guide
-                        you on your wellness journey.</p>
+            <h1 class="text-center mb-4">Our Journey / 启发点</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <img src="https://placehold.co/250x250" alt="Our Cozy Sauna"
+                        class="img-fluid rounded-circle mx-auto d-block mb-3">
+                    <h2>A Heartwarming Tale</h2>
+                    <p>Once a quaint corner in the bustling city, our traditional Chinese medicine sauna and foot soak
+                        therapy shop is a sanctuary for those seeking solace and healing.</p>
+                    <p>In the winter of 2020, we opened our doors, offering a blend of ancestral practices and a
+                        peaceful retreat in the heart of the community.</p>
+                    <p>Our philosophy is rooted in the belief that wellness arises from harmony within. We combine
+                        age-old traditions with a touch of modern convenience, ensuring every experience is both
+                        authentic and accessible to our visitors.</p>
+                    <p>With each passing season, our bond with the community grows stronger, as we continue to provide a
+                        tranquil space for relaxation and rejuvenation.</p>
+                    <p>Join us in this serene haven and embrace the balance of body and spirit.</p>
+                    <h3>我们的故事</h3>
+                    <p>在繁忙的城市中，我们为寻找安慰和治疗的人们提供了一个避风港。2020年冬天，我们开始了这段旅程，将祖传的智慧与社区的宁静相融合。</p>
+                    <p>我们相信，身心的和谐是健康的源泉。我们结合了古老的传统和现代的便利，确保每一次体验都是真实而又容易接近的。</p>
+                    <p>随着季节的更迭，我们与社区的联系也愈发紧密，我们持续提供一个放松和恢复活力的宁静空间。</p>
+                    <p>在这个宁静的避风港，与我们一起体验身心的平衡与和谐。</p>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer class="text-center text-lg-start"> <!-- bg-light -->
         <!-- Social Media Icons -->
         <div class="text-center pt-4">
-            <a href="https://facebook.com" class="text-reset fa-3x icon">
-                <i class="fa-brands fa-square-facebook" style="color: #74C0FC;"></i>
+            <a href="https://facebook.com" class="text-reset fa-3x icon" style="display: inline-block; margin: 0 10px;">
+                <i class="fa-brands fa-square-facebook" style="color: #74C0FC; transition: transform 0.3s;"></i>
             </a>
-            <a href="https://whatsapp.com" class="text-reset fa-3x icon">
-                <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i>
+            <a href="https://whatsapp.com" class="text-reset fa-3x icon" style="display: inline-block; margin: 0 10px;">
+                <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE; transition: transform 0.3s;"></i>
             </a>
             <!-- Add more social media icons as needed -->
         </div>
@@ -305,45 +396,45 @@
             <hr class="featurette-divider">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0 py-4">
-                    <h4 class="text-uppercase">祥贤传统药材汗蒸</h4>
-                    <h4 class="text-uppercase">XIANGXIAN TRADITIONAL SWEAT STEAMING HEALTH ENTERPRISE</h4>
-                    <p>Relax with our herbal foot soak and detoxify in our sauna.</p>
+                    <h4 lang="zh" class="text-uppercase">祥贤传统药材汗蒸</h4>
+                    <h4 lang="en" class="text-uppercase">XIANGXIAN TRADITIONAL SWEAT STEAMING HEALTH ENTERPRISE</h4>
+                    <br>
+                    <span lang="zh-cn">使用我们的草药泡脚和在我们的桑拿中排毒放松。</span>
+                    <br>
+                    <span lang="en">Relax with our herbal foot soak and detoxify in our sauna.</span>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Sitemap</h5>
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <a href="#mapid" class="text-dark">Map</a>
+                            <a href="#mapid" class="text-dark">Map / 地图</a>
                         </li>
                         <li>
-                            <a href="#directions" class="text-dark">Directions</a>
+                            <a href="#directions" class="text-dark">Directions / 方向</a>
                         </li>
                         <li>
-                            <a href="#opening-hours" class="text-dark">Opening Hours</a>
+                            <a href="#opening-hours" class="text-dark">Opening Hours / 营业时间</a>
                         </li>
                         <li>
-                            <a href="#contact" class="text-dark">Contact</a>
+                            <a href="#contact" class="text-dark">Contact / 联系方式</a>
                         </li>
                         <li>
-                            <a href="#convince-section" class="text-dark">Why Us?</a>
+                            <a href="#convince-section" class="text-dark">Why Us? / 为什么选择我们</a>
                         </li>
                         <li>
-                            <a href="#menu-pricing" class="text-dark">Pricing</a>
+                            <a href="#menu-pricing" class="text-dark">Pricing / 定价</a>
                         </li>
                         <li>
-                            <a href="#foot-soak" class="text-dark">Foot Soak Therapy</a>
+                            <a href="#foot-soak" class="text-dark">Foot Soak Therapy / 足浴疗法</a>
                         </li>
                         <li>
-                            <a href="#sauna-therapy" class="text-dark">Sauna Therapy</a>
+                            <a href="#sauna-therapy" class="text-dark">Sauna Therapy / 桑拿疗法</a>
                         </li>
                         <li>
-                            <a href="#myCarousel" class="text-dark">Photo Gallery</a>
+                            <a href="#myCarousel" class="text-dark">Photo Gallery / 照片画廊</a>
                         </li>
                         <li>
-                            <a href="#contact-form" class="text-dark">Write to Us</a>
-                        </li>
-                        <li>
-                            <a href="#about-us" class="text-dark">About Us</a>
+                            <a href="#about-us" class="text-dark">About Us / 关于我们</a>
                         </li>
                     </ul>
                 </div>
@@ -352,17 +443,24 @@
                     <p>
                         Jalan PM 1, Taman Perindustrian Merdeka,<br>
                         Batu Berendam, 75350 Melaka<br>
-                        <br>
-                        Phone 电话: <a href="tel:+60162060502">016-206 0502</a><br>
-                        Email 电邮网址：<a href="mailto:xiangxiansauna@gmail.com">xiangxiansauna@gmail.com</a><br>
+                        <hr class="featurette-divider d-none d-lg-block">
+                        <i class="fas fa-phone"></i> Phone 电话:<br><a href="tel:+60162060502">016-206 0502</a><br>
+                        <i class="fas fa-envelope"></i> Email 电邮网址：<a
+                            href="mailto:xiangxiansauna@gmail.com"><br>xiangxiansauna@gmail.com</a><br>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3 copyright">
             © 2024 祥贤传统药材汗蒸<br>XIANGXIAN TRADITIONAL SWEAT STEAMING HEALTH ENTERPRISE
         </div>
     </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/60162060502?text=您好，我想了解更多关于您的服务。" class="whatsapp_float" target="_blank"
+        rel="noopener noreferrer" title="Contact Us via WhatsApp / 通过 WhatsApp 联系我们">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
 
     <!-- Scroll to Top Button -->
     <button type="button" class="btn btn-secondary" id="scrollToTopBtn" title="Go to top">
