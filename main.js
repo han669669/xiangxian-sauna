@@ -35,3 +35,35 @@ mybutton.addEventListener('click', function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
+// Function to check the current store status based on the day of the week, opening and closing times, and update the status element on the webpage.
+function checkStoreStatus() {
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const currentMinute = hour * 60 + minute;
+
+    // Define store hours in minutes from midnight
+    const weekdayOpeningTime = 13 * 60; // 1:00 PM
+    const weekdayClosingTime = 22 * 60; // 10:00 PM
+    const weekendOpeningTime = 11 * 60; // 11:00 AM
+    const weekendClosingTime = 22 * 60; // 10:00 PM
+
+    let isOpen = false;
+
+    // 0 is Sunday, 6 is Saturday
+    if (dayOfWeek >= 1 && dayOfWeek <= 5) { // Weekdays
+        isOpen = currentMinute >= weekdayOpeningTime && currentMinute < weekdayClosingTime;
+    } else if (dayOfWeek === 0 || dayOfWeek === 6) { // Weekend
+        isOpen = currentMinute >= weekendOpeningTime && currentMinute < weekendClosingTime;
+    }
+
+    const statusElement = document.getElementById('store-status');
+    const statusElementCn = document.getElementById('store-status-cn');
+    statusElement.textContent = isOpen ? 'Open' : 'Closed';
+    statusElementCn.textContent = isOpen ? '营业中' : '已关闭';
+}
+
+// Run the function on page load
+document.addEventListener('DOMContentLoaded', checkStoreStatus);
